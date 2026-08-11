@@ -20,6 +20,8 @@ Node* findMiddle(Node* head){
         slow = slow->next;
         fast = fast->next->next;
     }
+    //fast = NULL toh fir even case
+    //fast->next = NULL toh fir odd case
 
     return slow;
 }
