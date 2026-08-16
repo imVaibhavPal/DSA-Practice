@@ -31,7 +31,7 @@ ListNode* deleteMiddle(ListNode* head) {
     }
 
     // Delete middle node
-    prev->next = slow->next;
+    prev->next = slow->next;    //it will remove the middle node from LL
 
     delete slow;
 
