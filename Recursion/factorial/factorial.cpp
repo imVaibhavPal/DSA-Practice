@@ -6,9 +6,7 @@ int getFactorial(int n){
     if(n<=1)
     return 1;
 
-    int factorial = getFactorial(n-1);
-
-    int answer = n * factorial;
+    int answer = n * getFactorial(n-1);
     return answer;
 }
 
