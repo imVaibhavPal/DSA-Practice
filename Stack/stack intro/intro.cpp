@@ -60,6 +60,8 @@ class Stack{
 
 int main(){
 
+    /*
+
     Stack st(5);
 
     st.push(22);
@@ -84,8 +86,8 @@ int main(){
     else{
         cout<<"Stack is not Empty mere dost "<<endl;
     }
-
-    /*creating a stack
+*/
+   // creating a stack
     stack<int> s;
 
     //push operation
@@ -106,7 +108,7 @@ int main(){
     }
 
     cout<<"size of stack is "<<s.size()<<endl;
-    */
+    
 
     return 0;
 }
