@@ -14,6 +14,7 @@ int main(){
 
     string ans = "";
 
+    //print the top element,remove it and repeat until the stack is empty.
     while(!s.empty()){
         char ch = s.top();
         ans.push_back(ch);
