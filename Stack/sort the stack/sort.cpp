@@ -1,0 +1,48 @@
+#include <iostream>
+#include <stack>
+using namespace std;
+
+void sortedInsert(stack<int> &st, int num) {
+    if (st.empty() || st.top() < num) {
+        st.push(num);
+        return;
+    }
+
+    int n = st.top();
+    st.pop();
+
+    sortedInsert(st, num);
+
+    st.push(n);
+}
+
+void sortStack(stack<int> &st) {
+    if (st.empty()) {
+        return;
+    }
+
+    int num = st.top();
+    st.pop();
+
+    sortStack(st);
+
+    sortedInsert(st, num);
+}
+
+int main() {
+    stack<int> st;
+
+    st.push(2);
+    st.push(4);
+    st.push(1);
+    st.push(3);
+
+    sortStack(st);
+
+    while (!st.empty()) {
+        cout << st.top() << " ";
+        st.pop();
+    }
+
+    return 0;
+}
