@@ -8,13 +8,14 @@ int main() {
     queue<int> q;
 
     q.push(11);
-    
+    cout<<"front of q is "<<q.front()<<endl;
     q.push(15);
     q.push(13);
 
     cout<<"size of queue is : "<<q.size()<<endl;
 
     q.pop();
+    cout<<"front of q is "<<q.front()<<endl;
     q.pop();
     //q.pop();
 
