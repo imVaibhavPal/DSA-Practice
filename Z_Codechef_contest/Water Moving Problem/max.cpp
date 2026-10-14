@@ -18,10 +18,11 @@ int main() {
 
         sort(A, A + N, greater<int>());
 
-        int ans = A[0];
+        int ans = 0;
+        int count = min(K + 1, N);
 
-        for (int i = 1; i <= K; i++) {
-            ans += A[i % N];
+        for (int i = 0; i < count; i++) {
+            ans += A[i];
         }
 
         cout << ans << endl;
