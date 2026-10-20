@@ -2,7 +2,6 @@
 #include<algorithm>
 #include<vector>
 
-// Search insert Position
 
 using namespace std;
 
